@@ -231,7 +231,23 @@ URI     : https://colorlib.com
                             <p class="lead">Implementamos soluciones . </p>
                             <p>Planillas
                                 <ul>
-                                    <li>Planillas</li>
+                                    <li>Planillas de pago de cotizaciones previsionales (Instituto Salvadoreño del Seguro Social ISSS, sistema de ahorro para pensiones AFP CRECER, S.A y AFP CONFIA, S.A)</li>
+                                    <li>Planilla de pagos en dos tipos ya sea quincenal o mensual </li>
+                                    <li>Planilla aguinaldos</li>
+                                    <li>Planillas de liquidación</li>
+                                    <li>Planillas de anticipo</li>
+                                    <li>Planillas de indemnización (despido y renuncia voluntaria)</li>
+                                    <li>Planillas de viáticos</li>
+                                    <li>Planilla de bonificación y comision</li>
+
+                                    <li>Reportes de planillas de sueldo</li>
+                                    <li>Reporte detallado de préstamos por banco</li>
+                                    <li>Reportes de memorándum</li>
+                                    <li>Reportes de constancias</li>
+                                    <li>Reportes de recibos (vacacional, bonificación, aguinaldo, indemnizaciones, liquidaciones, anticipos y de pagos)</li>
+                                    <li>Reportes de rentas por periodos</li>
+                                    <li>Programación de descuentos</li>
+  
                                 </ul>
                             </p>
                             <p>Requisiciones de compra
@@ -527,14 +543,14 @@ URI     : https://colorlib.com
                 <p class="tagline">Ingresa la informacion solicitada y pronto nos comunicaremos con usted. </p>
                 <div class="my-4">
                     <p class="tagline">
-                    <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
+            <form role="form" id="Formulario" action="pages/contact.php" method="POST">
                 <div class="form-group">
                     <label class="control-label" for="Nombre">Nombres</label>
-                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autofocus />
+                    <input type="text" class="form-control" id="Nombre" name="nombre" placeholder="Introduzca su nombre" required autofocus />
                 </div>            
                 <div class="form-group">
                     <label class="control-label" for="Motivo">Motivo de Contacto</label>
-                    <select name="Motivo" class="form-control">
+                    <select name="motivo" class="form-control">
                         <option value="Consulta General">Consulta General</option>
                         <option value="Realizar Pedido">Realizar Pedido</option>
                         <option value="Informe un problema">Informe un problema</option>
@@ -542,15 +558,15 @@ URI     : https://colorlib.com
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="Empresa">Empresa</label>
-                    <input type="text" class="form-control" id="Empresa" name="Empresa" placeholder="Introduzca el nombre de su empresa" required />
+                    <input type="text" class="form-control" id="Empresa" name="empresa" placeholder="Introduzca el nombre de su empresa" required />
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="Correo">Dirección de Correo Electrónico</label>
-                    <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca su correo electrónico" required />
+                    <input type="email" class="form-control" id="Correo" name="email" placeholder="Introduzca su correo electrónico" required />
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="Mensaje">Mensaje</label>
-                    <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required ></textarea>
+                    <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="mensaje" placeholder="Introduzca su mensaje" required ></textarea>
                 </div>
                 <div class="form-group">                
                     <input type="submit" class="btn btn-light" value="Enviar">
